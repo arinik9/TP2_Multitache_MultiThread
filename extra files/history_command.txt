@@ -1,0 +1,1000 @@
+   91  TTA_NAME_os="Linux"; export TTA_NAME_os
+   92  TTA_NAME_distro_code=""; export TTA_NAME_distro_code
+   93  TTA_NAME_distro_rel=""; export TTA_NAME_distro_rel
+   94  SGDTEMINSTDIR=/opt/tta_tem; export SGDTEMINSTDIR
+   95  if [ -f /etc/sgdtem.conf ]; then . /etc/sgdtem.conf; fi
+   96  [ -x $SGDTEMINSTDIR/bin/ttatdmcl ] && $SGDTEMINSTDIR/bin/ttatdmcl --dmpdisplay $DISPLAY --servercfg $SGDTEMINSTDIR/etc/client.prf &
+   97  if [ -f /etc/sgdtem.conf ]; then . /etc/sgdtem.conf; fi
+   98  if [ -f $HOME/.sgdtem.conf ]; then . $HOME/.sgdtem.conf; fi
+   99  [ -n "$UNIXSERIODAEMON" ] && DTDEVROOT=`$UNIXSERIODAEMON` export DTDEVROOT
+  100  if [ -x /usr/bin/mate-session ]; then echo "Found"; else echo "Not available"; fi
+  101  exec /usr/bin/mate-session 
+  102  echo -SYNC-
+  103  if [ -f /bin/ksh ]; then HISTFILE=/dev/null; export HISTFILE; exec /bin/ksh; fi
+  104  set +o emacs ; set +o gmacs ; set +o vi
+  105  LANG=fr_FR.UTF-8; export LANG
+  106  LC_MESSAGES=fr_FR.UTF-8; export LC_MESSAGES
+  107  ALTDISPLAY=if-vmsgd.insa-lyon.fr:12; export ALTDISPLAY
+  108  if [ -z $DISPLAY ]; then echo "Not set"; else echo "available"; fi
+  109  TTA_UID="`LANG=C LC_ALL=C id | sed 's/.*uid=\([0-9][0-9]*\).*/\1/'`"; export TTA_UID
+  110  TTA_USERNAME='.../_service/sco/tta/ldapcache/CN=Carmignani Julien,OU=PEOPLE,OU=ORGANISATION,DC=insa-lyon,DC=fr'; export TTA_USERNAME
+  111  TTA_SESSION_TOKEN=''; export TTA_SESSION_TOKEN
+  112  TTA_PRIMARY_DNSNAME='dsi-vmsgd.insa-lyon.fr'; export TTA_PRIMARY_DNSNAME
+  113  TTA_PE_ID=''; export TTA_PE_ID
+  114  TTA_CLIENT_IPADDR='134.214.106.133'; export TTA_CLIENT_IPADDR
+  115  TERM=''; export TERM
+  116  TTA_PEERDNSNAME='if-vmsgd.insa-lyon.fr'; export TTA_PEERDNSNAME
+  117  TTA_EXTDNSNAME='if-vmsgd.insa-lyon.fr'; export TTA_EXTDNSNAME
+  118  TTA_UNIXAUDIO_QUALITY=''; export TTA_UNIXAUDIO_QUALITY
+  119  if [ -f /etc/ttaprinter.conf ]; then . /etc/ttaprinter.conf; export LPDEST; fi
+  120  uname -sr
+  121  [ -x /usr/bin/lsb_release ] && /usr/bin/lsb_release -irc
+  122  TTA_NAME_distro_ident=""; export TTA_NAME_distro_ident
+  123  TTA_NAME_input_method="keyboard"; export TTA_NAME_input_method
+  124  TTA_NAME_release="3.10.13-101.fc18.x86_64
+  125  sh-4.2$"; export TTA_NAME_release
+  126  TTA_NAME_os="Linux"; export TTA_NAME_os
+  127  TTA_NAME_distro_code=""; export TTA_NAME_distro_code
+  128  TTA_NAME_distro_rel=""; export TTA_NAME_distro_rel
+  129  SGDTEMINSTDIR=/opt/tta_tem; export SGDTEMINSTDIR
+  130  if [ -f /etc/sgdtem.conf ]; then . /etc/sgdtem.conf; fi
+  131  [ -x $SGDTEMINSTDIR/bin/ttatdmcl ] && $SGDTEMINSTDIR/bin/ttatdmcl --dmpdisplay $DISPLAY --servercfg $SGDTEMINSTDIR/etc/client.prf &
+  132  if [ -f /etc/sgdtem.conf ]; then . /etc/sgdtem.conf; fi
+  133  if [ -f $HOME/.sgdtem.conf ]; then . $HOME/.sgdtem.conf; fi
+  134  [ -n "$UNIXSERIODAEMON" ] && DTDEVROOT=`$UNIXSERIODAEMON` export DTDEVROOT
+  135  if [ -x /usr/bin/mate-session ]; then echo "Found"; else echo "Not available"; fi
+  136  exec /usr/bin/mate-session 
+  137  make efface
+  138  make
+  139  make efface
+  140  make
+  141  make efface
+  142  make
+  143  make efface
+  144  make
+  145  ./Parking 
+  146  ./Public/
+  147  ./Parking 
+  148  ls
+  149  ./autopatrouille.sh
+  150  ls
+  151  ll
+  152  chmod autopatrouille.sh 744
+  153  chmod 744 autopatrouille.sh 
+  154  ll
+  155  ./autopatrouille.sh
+  156  PS
+  157  ps
+  158  ipcs -a
+  159  ps
+  160  ps -A
+  161  ps-a
+  162  ps -a
+  163  ipcs -a
+  164  kill -m 4161543
+  165  man kill
+  166  ipcrm -m 4161543
+  167  ipcrm -m 3702796
+  168  ipcrm -m 3833869
+  169  ipcrm -m 3932174 
+  170  ipcrm -m 4063247
+  171  ipcs -a
+  172  man
+  173  man ipcs
+  174  ipcs -amqs
+  175  ipcs -amqsc
+  176  man ipcs
+  177  ipcs -amqscp
+  178  ipcs -a
+  179  ipcrm -m 3375112
+  180  ipcrm -m 3702796
+  181  ipcrm -m 3833869
+  182  ipcrm -m 4063247
+  183  ipcs -a
+  184  pc -a
+  185  ps -a
+  186  exit
+  187  ./Parking 
+  188  ll
+  189  qqqqqqqqqqqqpclear
+  190  ll
+  191  make efface
+  192  make
+  193  make efface
+  194  make
+  195  ./Parking 
+  196  ps
+  197  ps -Ac
+  198  kill -9 6877 6875
+  199  ps -A
+  200  ps -Ac
+  201  ps -Ac | grep "Parking"
+  202  pkill Parking 
+  203  ps -Ac | grep "Parking"
+  204  pkill Parking 
+  205  ps -Ac | grep "Parking"
+  206  ipcs -a
+  207  ipcrm 196608 196608 7798784 8552456
+  208  ipcrm -qmp 196608 196608 7798784 8552456
+  209  ipcrm -qms 196608 196608 7798784 8552456
+  210  ipcs -a
+  211  ipcrm -m 196608
+  212  ipcrm -s 196608
+  213  ipcs
+  214  ipcs -q  196608
+  215  ipcrm -q  196608
+  216  ipcrm -m  7798784
+  217  ipcrm -m  8552456
+  218  ipcs -a
+  219  ps -Ac | grep "Parking"
+  220  ps -Ac
+  221  exit
+  222  ./TP_Multitache_Parking/
+  223  cd ./TP_Multitache_Parking/
+  224  ./Parking 
+  225  ps -Ac | grep "Parking"
+  226  ps -Ac | grep "Clavier"
+  227  ps -Ac | grep "main"
+  228  pkill -9 "Parking"
+  229  ps -Ac | grep "Parking"
+  230  ipcs -a
+  231  ipcrm -m 12517376
+  232  ipcrm -m 12943368
+  233  ipcrm -s 229376
+  234  ipcrm -q 229376
+  235  ipcs -a
+  236  ps -Ac | grep "Parking"
+  237  exit
+  238  echo -SYNC-
+  239  exec /bin/sh
+  240  echo -SYNC-
+  241  if [ -f /bin/ksh ]; then HISTFILE=/dev/null; export HISTFILE; exec /bin/ksh; fi
+  242  set +o emacs ; set +o gmacs ; set +o vi
+  243  LANG=fr_FR.UTF-8; export LANG
+  244  LC_MESSAGES=fr_FR.UTF-8; export LC_MESSAGES
+  245  ALTDISPLAY=cipc-vmsgd.insa-lyon.fr:11; export ALTDISPLAY
+  246  if [ -z $DISPLAY ]; then echo "Not set"; else echo "available"; fi
+  247  TTA_UID="`LANG=C LC_ALL=C id | sed 's/.*uid=\([0-9][0-9]*\).*/\1/'`"; export TTA_UID
+  248  TTA_USERNAME='.../_service/sco/tta/ldapcache/CN=Carmignani Julien,OU=PEOPLE,OU=ORGANISATION,DC=insa-lyon,DC=fr'; export TTA_USERNAME
+  249  TTA_SESSION_TOKEN=''; export TTA_SESSION_TOKEN
+  250  TTA_PRIMARY_DNSNAME='dsi-vmsgd.insa-lyon.fr'; export TTA_PRIMARY_DNSNAME
+  251  TTA_PE_ID=''; export TTA_PE_ID
+  252  TTA_CLIENT_IPADDR='134.214.106.95'; export TTA_CLIENT_IPADDR
+  253  TERM=''; export TERM
+  254  TTA_PEERDNSNAME='cipc-vmsgd.insa-lyon.fr'; export TTA_PEERDNSNAME
+  255  TTA_EXTDNSNAME='cipc-vmsgd.insa-lyon.fr'; export TTA_EXTDNSNAME
+  256  TTA_UNIXAUDIO_QUALITY=''; export TTA_UNIXAUDIO_QUALITY
+  257  if [ -f /etc/ttaprinter.conf ]; then . /etc/ttaprinter.conf; export LPDEST; fi
+  258  uname -sr
+  259  [ -x /usr/bin/lsb_release ] && /usr/bin/lsb_release -irc
+  260  TTA_NAME_distro_ident=""; export TTA_NAME_distro_ident
+  261  TTA_NAME_input_method="keyboard"; export TTA_NAME_input_method
+  262  TTA_NAME_release="3.10.13-101.fc18.x86_64
+  263  sh-4.2$"; export TTA_NAME_release
+  264  TTA_NAME_os="Linux"; export TTA_NAME_os
+  265  TTA_NAME_distro_code=""; export TTA_NAME_distro_code
+  266  TTA_NAME_distro_rel=""; export TTA_NAME_distro_rel
+  267  SGDTEMINSTDIR=/opt/tta_tem; export SGDTEMINSTDIR
+  268  if [ -f /etc/sgdtem.conf ]; then . /etc/sgdtem.conf; fi
+  269  [ -x $SGDTEMINSTDIR/bin/ttatdmcl ] && $SGDTEMINSTDIR/bin/ttatdmcl --dmpdisplay $DISPLAY --servercfg $SGDTEMINSTDIR/etc/client.prf &
+  270  if [ -f /etc/sgdtem.conf ]; then . /etc/sgdtem.conf; fi
+  271  if [ -f $HOME/.sgdtem.conf ]; then . $HOME/.sgdtem.conf; fi
+  272  [ -n "$UNIXSERIODAEMON" ] && DTDEVROOT=`$UNIXSERIODAEMON` export DTDEVROOT
+  273  if [ -x /usr/bin/mate-session ]; then echo "Found"; else echo "Not available"; fi
+  274  exec /usr/bin/mate-session 
+  275  ls
+  276  mkdir TP_Maths_Discretes
+  277  ls
+  278  cd TP_Maths_Discretes/
+  279  vi VoyCom_a_Distribuer.c
+  280  exit
+  281  cd TP_Maths_Discretes/
+  282  ls
+  283  gcc VoyCom_a_Distribuer.c -o Appli
+  284  vi VoyCom_a_Distribuer.c 
+  285  gcc VoyCom_a_Distribuer.c -o Appli
+  286  make
+  287  gcc VoyCom_a_Distribuer.c -o Appli_VoyCom -lrt -lm
+  288  ls
+  289  ./Appli_VoyCom 
+  290  exit
+  291  ls
+  292  cd TP_Multitache_2/
+  293  gcc main.c -o Appli_Premiers
+  294  ls
+  295  ./Appli_Premiers 
+  296  gcc main.c -o Appli_Premiers
+  297  ./Appli_Premiers 
+  298  gcc main.c -o Appli_Premiers
+  299  ./Appli_Premiers 
+  300  gcc main.c -o Appli_Premiers
+  301  ./Appli_Premiers 
+  302  man time
+  303  gcc main.c -o Appli_Premiers
+  304  ./Appli_Premiers 
+  305  gcc main.c -o Appli_Premiers
+  306  ./Appli_Premiers 
+  307  gcc main.c -o Appli_Premiers
+  308  ./Appli_Premiers 
+  309  gcc main.c -o Appli_Premiers
+  310  ./Appli_Premiers 
+  311  time ./Appli_Premiers 
+  312  gcc generator.c -o Generer_Nombres
+  313  ./Generer_Nombre
+  314  ls
+  315  ./Generer_Nombres 
+  316  ./Generer_Nombres > nombresGeneres.txt
+  317  cat nombresGeneres.txt 
+  318  ./Generer_Nombres 
+  319  gcc main.c -o Appli_Premiers
+  320  ./Appli_Premiers 
+  321  gcc main.c -o Appli_Premiers
+  322  ./Appli_Premiers 
+  323  gcc main.c -o Appli_Premiers
+  324  ./Appli_Premiers 
+  325  gcc main.c -o Appli_Premiers
+  326  ./Appli_Premiers 
+  327  gcc main.c -o Appli_Premiers
+  328  ./Appli_Premiers 
+  329  gcc main.c -o Appli_Premiers -Wall
+  330  gcc -Wall main.c -o Appli_Premiers
+  331  ./Appli_Premiers 
+  332  gcc -Wall main.c -o Appli_Premiers
+  333  ./Appli_Premiers 
+  334  ./Appli_Premiers nombresPremiers.txt 
+  335  cat nombresPremiers.txt 
+  336  cat nombresGeneres.txt 
+  337  python
+  338  ./
+  339  ./Generer_Nombres 5 10
+  340  ./Generer_Nombres 5 10 0
+  341  ./Generer_Nombres 5 10 100
+  342  ./Generer_Nombres 1 60 100
+  343  ./Generer_Nombres 1 60 100 > uneSeule.txt
+  344  ./Appli_Premiers uneSeule.txt 
+  345  ./Generer_Nombres 5 30 100 > nombresGeneres.txt 
+  346  cat nombresGeneres.txt 
+  347  ./Generer_Nombres 5 30 10 > nombresGeneres.txt 
+  348  cat nombresGeneres.txt 
+  349  ./Appli_Premiers uneSeule.txt 
+  350  ./Appli_Premiers nombresGeneres.txt 
+  351  time ./Appli_Premiers nombresGeneres.txt 
+  352  gcc -Wall main.c -o Appli_Premiers
+  353  time ./Appli_Premiers nombresGeneres.txt 
+  354  exit
+  355  ipcrs -a
+  356  ipcs -a
+  357  ipcrm -m 17301505
+  358  ipcs
+  359  exit
+  360  cd Documents/TP_Multitache_Parking1/
+  361  make efface
+  362  make
+  363  make efface
+  364  make
+  365  ipcs -a
+  366  ps -Ac | grep "Parking"
+  367  exit
+  368  make efface
+  369  make
+  370  ./Parking 
+  371  cd Documents/SVN/jc.tps-b3327/TP_Multitache_Parking/
+  372  make efface
+  373  make
+  374  ./Parking 
+  375  make efface
+  376  make
+  377  ./Parking 
+  378  make efface
+  379  make
+  380  ./Parking 
+  381  make efface
+  382  make
+  383  ./Parking 
+  384  make efface
+  385  make
+  386  ./Parking 
+  387  make efface
+  388  make
+  389  ./Parking 
+  390  make efface
+  391  make
+  392  ./Parking 
+  393  make efface
+  394  make
+  395  ./Parking 
+  396  make efface
+  397  make
+  398  ./Parking 
+  399  make efface
+  400  make
+  401  ./Parking 
+  402  make efface
+  403  make
+  404  ./Parking 
+  405  svn ci -m "On peut à nouveau faire entrer des voitures"
+  406  make efface
+  407  make
+  408  make efface
+  409  make
+  410  make efface
+  411  clear
+  412  make
+  413  ./Parking 
+  414  svn -ci -m "Ajout 2 sémaphores pour mémoire partagée"
+  415  svn ci -m "Ajout 2 sémaphores pour mémoire partagée"
+  416  make efface
+  417  make
+  418  make efface
+  419  make
+  420  ./Parking 
+  421  make efface$
+  422  make efface
+  423  make
+  424  ./Parking 
+  425  svn up
+  426  make efface
+  427  make
+  428  make efface
+  429  make
+  430  make efface
+  431  make
+  432  ./Parking 
+  433  svn ci -m "Sortie Actualisées avec compteur et son sémaphore"
+  434  ./Parking 
+  435  make efface
+  436  make
+  437  make efface
+  438  make
+  439  ./Parking 
+  440  make efface
+  441  make
+  442  ./Parking 
+  443  make efface
+  444  make
+  445  make efface
+  446  make
+  447  clear
+  448  make efface
+  449  make
+  450  ./Parking 
+  451  make efface
+  452  make
+  453  make efface
+  454  make
+  455  ./Parking 
+  456  make efface
+  457  make
+  458  ./Parking 
+  459  svn up
+  460  make efface
+  461  make
+  462  ./Parking 
+  463  make efface
+  464  make
+  465  make efface
+  466  make
+  467  ./Parking 
+  468  make efface
+  469  make
+  470  ./Parking 
+  471  make efface
+  472  make
+  473  ./Parking 
+  474  make efface
+  475  make
+  476  ./Parking 
+  477  make efface
+  478  make
+  479  ./Parking 
+  480  make efface
+  481  make*
+  482  make
+  483  ./Parking 
+  484  make efface
+  485  make
+  486  ./Parking 
+  487  make efface
+  488  make
+  489  ./Parking 
+  490  make efface
+  491  ./Parking 
+  492  make
+  493  ./Parking 
+  494  make efface
+  495  make
+  496  ./Parking 
+  497  make efface
+  498  make
+  499  ./Parking 
+  500  make efface
+  501  make
+  502  ./Parking 
+  503  make efface
+  504  make
+  505  ./Parking 
+  506  make efface
+  507  make
+  508  ./Parking 
+  509  make efface
+  510  make
+  511  ./Parking 
+  512  make efface
+  513  make
+  514  ./Parking 
+  515  make efface
+  516  make
+  517  ./Parking 
+  518  make
+  519  make efface
+  520  make
+  521  ./Parking 
+  522  make efface
+  523  make
+  524  make efface
+  525  make
+  526  make efface
+  527  make
+  528  ./P
+  529  ./Parking 
+  530  svn up
+  531  make efface
+  532  make
+  533  ./Parking 
+  534  make efface
+  535  make
+  536  ./Parking 
+  537  make efface
+  538  make
+  539  ./Parking 
+  540  make efface
+  541  make
+  542  ./Parking 
+  543  svn ci -m "probleme choix priorité"
+  544  ./Parking 
+  545  make efface
+  546  make
+  547  ./Parking 
+  548  make efface
+  549  make
+  550  make efface
+  551  make
+  552  ./Parking 
+  553  make efface
+  554  make
+  555  ./Parking 
+  556  make efface
+  557  make
+  558  ./Parking 
+  559  ./p
+  560  ./Parking 
+  561  make efface
+  562  make
+  563  ./Parking 
+  564  make efface
+  565  make
+  566  ./Parking 
+  567  make efface
+  568  make
+  569  ./Parking 
+  570  make efface
+  571  make
+  572  ./Parking 
+  573  make efface
+  574  make
+  575  ./Parking 
+  576  make efface
+  577  make
+  578  ./Parking 
+  579  ps -e |grep Parking
+  580  ipcs -a
+  581  ./Parking 
+  582  make efface
+  583  make
+  584  ./Parking 
+  585  make
+  586  ./Parking 
+  587  make
+  588  ./Parking 
+  589  make
+  590  ./Parking 
+  591  make efface
+  592  make
+  593  ./Parking 
+  594  make
+  595  ./Parking 
+  596  make
+  597  ./Parking 
+  598  make
+  599  ./Parking 
+  600  make
+  601  ./Parking 
+  602  make
+  603  ./Parking 
+  604  make
+  605  ./Parking 
+  606  make
+  607  ./Parking 
+  608  clear
+  609  ./Parking 
+  610  make
+  611  ./Parking 
+  612  make
+  613  ./Parking 
+  614  make
+  615  ./Parking 
+  616  make
+  617  ./Parking 
+  618  make
+  619  ./Parking 
+  620  make
+  621  ./Parking 
+  622  make
+  623  ./Parking 
+  624  make
+  625  ./Parking 
+  626  make
+  627  ./Parking 
+  628  make
+  629  ./Parking 
+  630  make
+  631  ./Parking 
+  632  make
+  633  ./Parking 
+  634  make
+  635  ./Parking 
+  636  cd ..
+  637  ps -Ac |grep "Parking"
+  638  ipcs -a
+  639  ipcrm -s 0
+  640  ipcrm -m 17367040
+  641  ipcrm -m 22020097
+  642  ipcrm -m 18153482
+  643  ipcs -a
+  644  ps -Ac |grep "Parking"
+  645  ipcs -a
+  646  top
+  647  ps -Ac | grep "Parkin"
+  648  ps -Ac | grep "Parking"
+  649  ipcs -a
+  650  ipcrm -s 5537792
+  651  ipcrm -s 5570561
+  652  ipcrm -q 2752512
+  653  ipcrm -m 28377101
+  654  ipcrm -m 28344330
+  655  ipcs -a
+  656  svn up
+  657  ./P
+  658  cd TP_Multitache_Parking/*
+  659  cd TP_Multitache_Parking/
+  660  ./Parking 
+  661  make
+  662  ./Parking 
+  663  ps -Ac |grep Parking
+  664  ipcs -a
+  665   ipcrm -a
+  666  ipcs -a
+  667  exit
+  668  ipcs -a
+  669  cd Documents/SVN/jc.tps-b3327/TP_Multitache_Parking/
+  670  svn ci -m "Erreur  quand on dépasse 8 places pour le compteur"
+  671  ipcs -a
+  672  ipcrm -a
+  673  ipcs -a
+  674  exit
+  675  cd Documents/SVN/jc.tps-b3327/TP_Multitache_Parking/
+  676  make
+  677  ./P
+  678  ./Parking 
+  679  make
+  680  ./Parking 
+  681  cd Documents/SVN/jc.tps-b3327/TP_Multitache_Parking/
+  682  make
+  683  make efface
+  684  make
+  685  make efface
+  686  make
+  687  make efface
+  688  make
+  689  ./P
+  690  ./Parking 
+  691  make
+  692  ./Parking 
+  693  ipcs -a
+  694  ipcs -a
+  695  ipcrm -m 7274496
+  696  ipcs -a
+  697  ipcrm -a
+  698  ipcs -a
+  699  exit
+  700  ll
+  701  chmod TP_Multitache_Parking/ 755
+  702  man chmod
+  703  chmod 755 TP_Multitache_Parking/ 
+  704  ll
+  705  cd ..
+  706  chmod 755 TP_Multitache_Parking/
+  707  ipcs -a
+  708  ipcrm -a
+  709  ipcs -a
+  710  ps -Ac | grep "Parking"
+  711  ps -Ac | grep Parking
+  712  exit
+  713  echo -SYNC-
+  714  exec /bin/sh
+  715  echo -SYNC-
+  716  if [ -f /bin/ksh ]; then HISTFILE=/dev/null; export HISTFILE; exec /bin/ksh; fi
+  717  set +o emacs ; set +o gmacs ; set +o vi
+  718  LANG=fr_FR.UTF-8; export LANG
+  719  LC_MESSAGES=fr_FR.UTF-8; export LC_MESSAGES
+  720  ALTDISPLAY=cipc-vmsgd.insa-lyon.fr:11; export ALTDISPLAY
+  721  if [ -z $DISPLAY ]; then echo "Not set"; else echo "available"; fi
+  722  TTA_UID="`LANG=C LC_ALL=C id | sed 's/.*uid=\([0-9][0-9]*\).*/\1/'`"; export TTA_UID
+  723  TTA_USERNAME='.../_service/sco/tta/ldapcache/CN=Carmignani Julien,OU=PEOPLE,OU=ORGANISATION,DC=insa-lyon,DC=fr'; export TTA_USERNAME
+  724  TTA_SESSION_TOKEN=''; export TTA_SESSION_TOKEN
+  725  TTA_PRIMARY_DNSNAME='dsi-vmsgd.insa-lyon.fr'; export TTA_PRIMARY_DNSNAME
+  726  TTA_PE_ID=''; export TTA_PE_ID
+  727  TTA_CLIENT_IPADDR='90.29.18.23'; export TTA_CLIENT_IPADDR
+  728  TERM=''; export TERM
+  729  TTA_PEERDNSNAME='cipc-vmsgd.insa-lyon.fr'; export TTA_PEERDNSNAME
+  730  TTA_EXTDNSNAME='cipc-vmsgd.insa-lyon.fr'; export TTA_EXTDNSNAME
+  731  TTA_UNIXAUDIO_QUALITY=''; export TTA_UNIXAUDIO_QUALITY
+  732  if [ -f /etc/ttaprinter.conf ]; then . /etc/ttaprinter.conf; export LPDEST; fi
+  733  uname -sr
+  734  [ -x /usr/bin/lsb_release ] && /usr/bin/lsb_release -irc
+  735  TTA_NAME_distro_ident=""; export TTA_NAME_distro_ident
+  736  TTA_NAME_input_method="keyboard"; export TTA_NAME_input_method
+  737  TTA_NAME_release="3.10.13-101.fc18.x86_64
+  738  sh-4.2$"; export TTA_NAME_release
+  739  TTA_NAME_os="Linux"; export TTA_NAME_os
+  740  TTA_NAME_distro_code=""; export TTA_NAME_distro_code
+  741  TTA_NAME_distro_rel=""; export TTA_NAME_distro_rel
+  742  SGDTEMINSTDIR=/opt/tta_tem; export SGDTEMINSTDIR
+  743  if [ -f /etc/sgdtem.conf ]; then . /etc/sgdtem.conf; fi
+  744  [ -x $SGDTEMINSTDIR/bin/ttatdmcl ] && $SGDTEMINSTDIR/bin/ttatdmcl --dmpdisplay $DISPLAY --servercfg $SGDTEMINSTDIR/etc/client.prf &
+  745  if [ -f /etc/sgdtem.conf ]; then . /etc/sgdtem.conf; fi
+  746  if [ -f $HOME/.sgdtem.conf ]; then . $HOME/.sgdtem.conf; fi
+  747  [ -n "$UNIXSERIODAEMON" ] && DTDEVROOT=`$UNIXSERIODAEMON` export DTDEVROOT
+  748  if [ -x /usr/bin/mate-session ]; then echo "Found"; else echo "Not available"; fi
+  749  exec /usr/bin/mate-session 
+  750  ipcs -a
+  751  ipcrm -m 5799936
+  752  ipcs -a
+  753  exit
+  754  pkill -9 Firefox
+  755  ps -a
+  756  ps -Ac
+  757  chmod -r 755 TP_Multitache_Parking
+  758  chmod 755 -r TP_Multitache_Parking
+  759  ./Parking 
+  760  ll
+  761  chmod 755 TP_Multitache_Parking
+  762  chmod -r 755 TP_Multitache_Parking
+  763  chmod -R 755 TP_Multitache_Parking
+  764  ipcs -a
+  765  ipcrm -a
+  766  ipcs -a
+  767  ps -Ac | grep "Parking"
+  768  exit
+  769  cd TP_Multitache_2/
+  770  ls
+  771  ./Appli_Premiers 
+  772  ./time ./Appli_Premiers 
+  773  time ./Appli_Premiers 
+  774  gcc main.c -o Appli_Premiers
+  775  time ./Appli_Premiers 
+  776  gcc main.c -o Appli_Premiers
+  777  gcc main.c -o Appli_Premiers -lm
+  778  time ./Appli_Premiers 
+  779  gcc main.c -o Appli_Premiers -lm
+  780  ./Appli_Premiers 
+  781  gcc main.c -o Appli_Premiers -lm
+  782  ./Appli_Premiers 
+  783  gcc main.c -o Appli_Premiers -lm
+  784  ./Appli_Premiers 
+  785  .
+  786  echo -SYNC-
+  787  exec /bin/sh
+  788  echo -SYNC-
+  789  exec /bin/sh
+  790  echo -SYNC-
+  791  if [ -f /bin/ksh ]; then HISTFILE=/dev/null; export HISTFILE; exec /bin/ksh; fi
+  792  set +o emacs ; set +o gmacs ; set +o vi
+  793  LANG=fr_FR.UTF-8; export LANG
+  794  LC_MESSAGES=fr_FR.UTF-8; export LC_MESSAGES
+  795  ALTDISPLAY=cipc-vmsgd.insa-lyon.fr:14; export ALTDISPLAY
+  796  if [ -z $DISPLAY ]; then echo "Not set"; else echo "available"; fi
+  797  TTA_UID="`LANG=C LC_ALL=C id | sed 's/.*uid=\([0-9][0-9]*\).*/\1/'`"; export TTA_UID
+  798  TTA_USERNAME='.../_service/sco/tta/ldapcache/CN=Carmignani Julien,OU=PEOPLE,OU=ORGANISATION,DC=insa-lyon,DC=fr'; export TTA_USERNAME
+  799  TTA_SESSION_TOKEN=''; export TTA_SESSION_TOKEN
+  800  TTA_PRIMARY_DNSNAME='dsi-vmsgd.insa-lyon.fr'; export TTA_PRIMARY_DNSNAME
+  801  TTA_PE_ID=''; export TTA_PE_ID
+  802  TTA_CLIENT_IPADDR='134.214.106.25'; export TTA_CLIENT_IPADDR
+  803  TERM=''; export TERM
+  804  TTA_PEERDNSNAME='cipc-vmsgd.insa-lyon.fr'; export TTA_PEERDNSNAME
+  805  TTA_EXTDNSNAME='cipc-vmsgd.insa-lyon.fr'; export TTA_EXTDNSNAME
+  806  TTA_UNIXAUDIO_QUALITY=''; export TTA_UNIXAUDIO_QUALITY
+  807  if [ -f /etc/ttaprinter.conf ]; then . /etc/ttaprinter.conf; export LPDEST; fi
+  808  uname -sr
+  809  [ -x /usr/bin/lsb_release ] && /usr/bin/lsb_release -irc
+  810  TTA_NAME_distro_ident=""; export TTA_NAME_distro_ident
+  811  TTA_NAME_input_method="keyboard"; export TTA_NAME_input_method
+  812  TTA_NAME_release="3.10.13-101.fc18.x86_64
+  813  sh-4.2$"; export TTA_NAME_release
+  814  TTA_NAME_os="Linux"; export TTA_NAME_os
+  815  TTA_NAME_distro_code=""; export TTA_NAME_distro_code
+  816  TTA_NAME_distro_rel=""; export TTA_NAME_distro_rel
+  817  SGDTEMINSTDIR=/opt/tta_tem; export SGDTEMINSTDIR
+  818  if [ -f /etc/sgdtem.conf ]; then . /etc/sgdtem.conf; fi
+  819  [ -x $SGDTEMINSTDIR/bin/ttatdmcl ] && $SGDTEMINSTDIR/bin/ttatdmcl --dmpdisplay $DISPLAY --servercfg $SGDTEMINSTDIR/etc/client.prf &
+  820  if [ -f /etc/sgdtem.conf ]; then . /etc/sgdtem.conf; fi
+  821  if [ -f $HOME/.sgdtem.conf ]; then . $HOME/.sgdtem.conf; fi
+  822  [ -n "$UNIXSERIODAEMON" ] && DTDEVROOT=`$UNIXSERIODAEMON` export DTDEVROOT
+  823  if [ -x /usr/bin/mate-session ]; then echo "Found"; else echo "Not available"; fi
+  824  exec /usr/bin/mate-session 
+  825  echo -SYNC-
+  826  if [ -f /bin/ksh ]; then HISTFILE=/dev/null; export HISTFILE; exec /bin/ksh; fi
+  827  set +o emacs ; set +o gmacs ; set +o vi
+  828  LANG=fr_FR.UTF-8; export LANG
+  829  LC_MESSAGES=fr_FR.UTF-8; export LC_MESSAGES
+  830  ALTDISPLAY=cipc-vmsgd.insa-lyon.fr:15; export ALTDISPLAY
+  831  if [ -z $DISPLAY ]; then echo "Not set"; else echo "available"; fi
+  832  TTA_UID="`LANG=C LC_ALL=C id | sed 's/.*uid=\([0-9][0-9]*\).*/\1/'`"; export TTA_UID
+  833  ls
+  834  ./Appli_VoyCom 
+  835  ./Appli_VoyCom 6
+  836  ./Appli_VoyCom
+  837  gcc VoyCom_a_Distribuer.c -o Appli_VoyCom -lrt -lm
+  838  ./Appli_VoyCom
+  839  ls
+  840  ./Appli_VoyCom
+  841  ls
+  842  gcc VoyCom_a_Distribuer.c -o Appli_VoyCom -lrt -lm
+  843  ./Appli_VoyCom
+  844  ls
+  845  vi DisplayTsp3.html 
+  846  ls
+  847  gcc VoyCom_a_Distribuer.c -o Appli_VoyCom -lrt -lm
+  848  ./Appli_VoyCom
+  849  vi DisplayTsp3.html 
+  850  rm DisplayTsp3.html 
+  851  gcc VoyCom_a_Distribuer.c -o Appli_VoyCom -lrt -lm
+  852  ./Appli_VoyCom
+  853  gcc VoyCom_a_Distribuer.c -o Appli_VoyCom -lrt -lm
+  854  ./Appli_VoyCom
+  855  gcc VoyCom_a_Distribuer.c -o Appli_VoyCom -lrt -lm
+  856  ./Appli_VoyCom
+  857  gcc VoyCom_a_Distribuer.c -o Appli_VoyCom -lrt -lm
+  858  ./Appli_VoyCom
+  859  gcc VoyCom_a_Distribuer.c -o Appli_VoyCom -lrt -lm
+  860  ./Appli_VoyCom
+  861  gcc VoyCom_a_Distribuer.c -o Appli_VoyCom -lrt -lm
+  862  ./Appli_VoyCom
+  863  gcc VoyCom_a_Distribuer.c -o Appli_VoyCom -lrt -lm
+  864  ./Appli_VoyCom
+  865  gcc VoyCom_a_Distribuer.c -o Appli_VoyCom -lrt -lm
+  866  ./Appli_VoyCom
+  867  gcc VoyCom_a_Distribuer.c -o Appli_VoyCom -lrt -lm
+  868  ./Appli_VoyCom
+  869  gcc VoyCom_a_Distribuer.c -o Appli_VoyCom -lrt -lm
+  870  ./Appli_VoyCom
+  871  gcc VoyCom_a_Distribuer.c -o Appli_VoyCom -lrt -lm
+  872  ./Appli_VoyCom
+  873  gcc VoyCom_a_Distribuer.c -o Appli_VoyCom -lrt -lm
+  874  ./Appli_VoyCom
+  875  gcc VoyCom_a_Distribuer.c -o Appli_VoyCom -lrt -lm
+  876  ./Appli_VoyCom
+  877  gcc VoyCom_a_Distribuer.c -o Appli_VoyCom -lrt -lm
+  878  ./Appli_VoyCom
+  879  gcc VoyCom_a_Distribuer.c -o Appli_VoyCom -lrt -lm
+  880  ./Appli_VoyCom
+  881  gcc VoyCom_a_Distribuer.c -o Appli_VoyCom -lrt -lm
+  882  ./Appli_VoyCom
+  883  gcc VoyCom_a_Distribuer.c -o Appli_VoyCom -lrt -lm
+  884  ./Appli_VoyCom
+  885  gcc VoyCom_a_Distribuer.c -o Appli_VoyCom -lrt -lm
+  886  ./Appli_VoyCom
+  887  gcc VoyCom_a_Distribuer.c -o Appli_VoyCom -lrt -lm
+  888  ./Appli_VoyCom
+  889  gcc VoyCom_a_Distribuer.c -o Appli_VoyCom -lrt -lm
+  890  ./Appli_VoyCom
+  891  gcc VoyCom_a_Distribuer.c -o Appli_VoyCom -lrt -lm
+  892  ./Appli_VoyCom
+  893  gcc VoyCom_a_Distribuer.c -o Appli_VoyCom -lrt -lm
+  894  ./Appli_VoyCom
+  895  gcc VoyCom_a_Distribuer.c -o Appli_VoyCom -lrt -lm
+  896  ./Appli_VoyCom
+  897  gcc VoyCom_a_Distribuer.c -o Appli_VoyCom -lrt -lm
+  898  ./Appli_VoyCom
+  899  gcc VoyCom_a_Distribuer.c -o Appli_VoyCom -lrt -lm
+  900  ./Appli_VoyCom
+  901  echo -SYNC-
+  902  exec /bin/sh
+  903  echo -SYNC-
+  904  exec /bin/sh
+  905  echo -SYNC-
+  906  if [ -f /bin/ksh ]; then HISTFILE=/dev/null; export HISTFILE; exec /bin/ksh; fi
+  907  set +o emacs ; set +o gmacs ; set +o vi
+  908  LANG=fr_FR.UTF-8; export LANG
+  909  LC_MESSAGES=fr_FR.UTF-8; export LC_MESSAGES
+  910  ALTDISPLAY=dsi-vmsgd.insa-lyon.fr:11; export ALTDISPLAY
+  911  if [ -z $DISPLAY ]; then echo "Not set"; else echo "available"; fi
+  912  TTA_UID="`LANG=C LC_ALL=C id | sed 's/.*uid=\([0-9][0-9]*\).*/\1/'`"; export TTA_UID
+  913  TTA_USERNAME='.../_service/sco/tta/ldapcache/CN=Carmignani Julien,OU=PEOPLE,OU=ORGANISATION,DC=insa-lyon,DC=fr'; export TTA_USERNAME
+  914  TTA_SESSION_TOKEN=''; export TTA_SESSION_TOKEN
+  915  TTA_PRIMARY_DNSNAME='dsi-vmsgd.insa-lyon.fr'; export TTA_PRIMARY_DNSNAME
+  916  TTA_PE_ID=''; export TTA_PE_ID
+  917  TTA_CLIENT_IPADDR='90.15.241.244'; export TTA_CLIENT_IPADDR
+  918  TERM=''; export TERM
+  919  TTA_PEERDNSNAME='dsi-vmsgd.insa-lyon.fr'; export TTA_PEERDNSNAME
+  920  TTA_EXTDNSNAME='dsi-vmsgd.insa-lyon.fr'; export TTA_EXTDNSNAME
+  921  TTA_UNIXAUDIO_QUALITY=''; export TTA_UNIXAUDIO_QUALITY
+  922  if [ -f /etc/ttaprinter.conf ]; then . /etc/ttaprinter.conf; export LPDEST; fi
+  923  uname -sr
+  924  [ -x /usr/bin/lsb_release ] && /usr/bin/lsb_release -irc
+  925  TTA_NAME_distro_ident=""; export TTA_NAME_distro_ident
+  926  TTA_NAME_input_method="keyboard"; export TTA_NAME_input_method
+  927  TTA_NAME_release="3.10.13-101.fc18.x86_64
+  928  sh-4.2$"; export TTA_NAME_release
+  929  TTA_NAME_os="Linux"; export TTA_NAME_os
+  930  TTA_NAME_distro_code=""; export TTA_NAME_distro_code
+  931  TTA_NAME_distro_rel=""; export TTA_NAME_distro_rel
+  932  SGDTEMINSTDIR=/opt/tta_tem; export SGDTEMINSTDIR
+  933  if [ -f /etc/sgdtem.conf ]; then . /etc/sgdtem.conf; fi
+  934  [ -x $SGDTEMINSTDIR/bin/ttatdmcl ] && $SGDTEMINSTDIR/bin/ttatdmcl --dmpdisplay $DISPLAY --servercfg $SGDTEMINSTDIR/etc/client.prf &
+  935  if [ -f /etc/sgdtem.conf ]; then . /etc/sgdtem.conf; fi
+  936  if [ -f $HOME/.sgdtem.conf ]; then . $HOME/.sgdtem.conf; fi
+  937  [ -n "$UNIXSERIODAEMON" ] && DTDEVROOT=`$UNIXSERIODAEMON` export DTDEVROOT
+  938  if [ -x /usr/bin/mate-session ]; then echo "Found"; else echo "Not available"; fi
+  939  exec /usr/bin/mate-session 
+  940  echo -SYNC-
+  941  if [ -f /bin/ksh ]; then HISTFILE=/dev/null; export HISTFILE; exec /bin/ksh; fi
+  942  set +o emacs ; set +o gmacs ; set +o vi
+  943  LANG=fr_FR.UTF-8; export LANG
+  944  LC_MESSAGES=fr_FR.UTF-8; export LC_MESSAGES
+  945  ALTDISPLAY=dsi-vmsgd.insa-lyon.fr:10; export ALTDISPLAY
+  946  if [ -z $DISPLAY ]; then echo "Not set"; else echo "available"; fi
+  947  TTA_UID="`LANG=C LC_ALL=C id | sed 's/.*uid=\([0-9][0-9]*\).*/\1/'`"; export TTA_UID
+  948  TTA_USERNAME='.../_service/sco/tta/ldapcache/CN=Carmignani Julien,OU=PEOPLE,OU=ORGANISATION,DC=insa-lyon,DC=fr'; export TTA_USERNAME
+  949  TTA_SESSION_TOKEN=''; export TTA_SESSION_TOKEN
+  950  TTA_PRIMARY_DNSNAME='dsi-vmsgd.insa-lyon.fr'; export TTA_PRIMARY_DNSNAME
+  951  TTA_PE_ID=''; export TTA_PE_ID
+  952  TTA_CLIENT_IPADDR='90.15.241.244'; export TTA_CLIENT_IPADDR
+  953  TERM=''; export TERM
+  954  TTA_PEERDNSNAME='dsi-vmsgd.insa-lyon.fr'; export TTA_PEERDNSNAME
+  955  TTA_EXTDNSNAME='dsi-vmsgd.insa-lyon.fr'; export TTA_EXTDNSNAME
+  956  TTA_UNIXAUDIO_QUALITY=''; export TTA_UNIXAUDIO_QUALITY
+  957  if [ -f /etc/ttaprinter.conf ]; then . /etc/ttaprinter.conf; export LPDEST; fi
+  958  uname -sr
+  959  [ -x /usr/bin/lsb_release ] && /usr/bin/lsb_release -irc
+  960  TTA_NAME_distro_ident=""; export TTA_NAME_distro_ident
+  961  TTA_NAME_input_method="keyboard"; export TTA_NAME_input_method
+  962  TTA_NAME_release="3.10.13-101.fc18.x86_64
+  963  sh-4.2$"; export TTA_NAME_release
+  964  TTA_NAME_os="Linux"; export TTA_NAME_os
+  965  TTA_NAME_distro_code=""; export TTA_NAME_distro_code
+  966  TTA_NAME_distro_rel=""; export TTA_NAME_distro_rel
+  967  SGDTEMINSTDIR=/opt/tta_tem; export SGDTEMINSTDIR
+  968  if [ -f /etc/sgdtem.conf ]; then . /etc/sgdtem.conf; fi
+  969  [ -x $SGDTEMINSTDIR/bin/ttatdmcl ] && $SGDTEMINSTDIR/bin/ttatdmcl --dmpdisplay $DISPLAY --servercfg $SGDTEMINSTDIR/etc/client.prf &
+  970  if [ -f /etc/sgdtem.conf ]; then . /etc/sgdtem.conf; fi
+  971  if [ -f $HOME/.sgdtem.conf ]; then . $HOME/.sgdtem.conf; fi
+  972  [ -n "$UNIXSERIODAEMON" ] && DTDEVROOT=`$UNIXSERIODAEMON` export DTDEVROOT
+  973  if [ -x /usr/bin/mate-session ]; then echo "Found"; else echo "Not available"; fi
+  974  exec /usr/bin/mate-session 
+  975  ls
+  976  cd TP_Maths_Discretes/
+  977  make
+  978  ls
+  979  ./Appli_VoyCom 
+  980  make
+  981  ./Appli_VoyCom 
+  982  ls
+  983  ps -Ac |grep Firefox
+  984  ps -Ac
+  985  ls
+  986  cd TP_Multitache_2/
+  987  ls
+  988  ./Appli_Premiers 
+  989  vim main.c 
+  990  vim makefile
+  991  gcc main.c -o Appli_Premiers -lm
+  992  ./Appli_Premiers 
+  993  exit
+  994* 
+  995  ls
+  996  ./Generer_Nombres 
+  997  ./Generer_Nombres > nombresGeneres.txt
+  998  ./Appli_Premiers nombresGeneres.txt
+  999  time ./Appli_Premiers nombresGeneres.txt
+ 1000  ./Generer_Nombres 20 64 100 > nombresGeneresRedondance.txt
+ 1001  vim ./nombresGeneres2.txt
+ 1002  vim ./nombresGeneresRedondance.txt 
+ 1003  ./Appli_Premiers nombresGeneresRedondance.txt 
+ 1004  time ./Appli_Premiers nombresGeneresRedondance.txt 
+ 1005  ./Generer_Nombres 20 64 100 > nombresGeneresRedondance.txt
+ 1006  time ./Appli_Premiers nombresGeneresRedondance.txt 
+ 1007  ./Generer_Nombres 20 64 80 > nombresGeneresRedondance.txt
+ 1008  time ./Appli_Premiers nombresGeneresRedondance.txt 
+ 1009  ./Generer_Nombres 20 32 0 > nombresGeneresAucuneRedondance32.txt
+ 1010  time ./Appli_Premiers nombresGeneresAucuneRedondance32.txt 
+ 1011  time ./Appli_Premiers uneSeule.txt
+ 1012  touch unSeulPasPremier.txt
+ 1013  vim unSeulPasPremier.txt
+ 1014  time ./Appli_Premiers unSeulPasPremier.txt
+ 1015  time ./Appli_Premiers nombresGeneresRedondance.txt 
+ 1016  time ./Appli_Premiers nombresGeneres.txt 
+ 1017  ls
+ 1018  time ./Appli_Premiers nombresGeneresAucuneRedondance32.txt 
+ 1019  time ./Appli_Premiers unSeul.txt
+ 1020  time ./Appli_Premiers unSeulPremier.txt 
+ 1021  time ./Appli_Premiers unSeulPremier.txt
+ 1022  time ./Appli_Premiers unSeulPremier.txt 
+ 1023  time ./Appli_Premiers unSeulPasPremier.txt
+ 1024  time ./Appli_Premiers nombresGeneresAucuneRedondance32.txt 
+ 1025* 
+ 1026  time ./Appli_Premiers  nombresGeneres.txt
+ 1027* 
+ 1028  time ./Appli_Premiers  nombresGeneres.txt
+ 1029  gcc main.c -o Appli_Premiers_Para -lm
+ 1030  gcc main.c -o Appli_Premiers_Para -lm -lpthread
+ 1031  ./Appli_Premiers_Para 
+ 1032  time ./Appli_Premiers_Para unSeulPremier.txt
+ 1033  time ./Appli_Premiers unSeulPremier.txt
+ 1034  time ./Appli_Premiers_Para unSeulPremier.txt
+ 1035  gcc main.c -o Appli_Premiers_Para -lm -lpthread
+ 1036  time ./Appli_Premiers_Para unSeulPremier.txt
+ 1037  time ./Appli_Premiers_Para nombresGeneres.txt
+ 1038  time ./Appli_Premiers nombresGeneres.txt
+ 1039  time ./Appli_Premiers_Para nombresGeneres.txt
+ 1040  time ./Appli_Premiers nombresPetitGain.txt 
+ 1041  time ./Appli_Premiers_Para nombresPetitGain.txt 
+ 1042  gcc main.c -o Appli_Premiers_Para -lm -lpthread
+ 1043*  
+ 1044  time ./Appli_Premiers nombresPetitGain.txt 
+ 1045  time ./Appli_Premiers nombresGrandGain.txt 
+ 1046  time ./Appli_Premiers_Para nombresGrandGain.txt 
+ 1047  time ./Appli_Premiers nombresGrandGain.txt 
+ 1048  time ./Appli_Premiers_Para nombresGrandGain.txt 
+ 1049  time ./Appli_Premiers nombresGrandGain.txt 
+ 1050  time ./Appli_Premiers_Para nombresGrandGain.txt 
+ 1051  time ./Appli_Premiers nombresGrandGain.txt 
+ 1052  time ./Appli_Premiers_Para nombresGrandGain.txt 
+ 1053  time ./Appli_Premiers nombresPetitGain.txt 
+ 1054  time ./Appli_Premiers_Para nombresPetitGain.txt 
+ 1055  time ./Appli_Premiers unSeulPremier.txt 
+ 1056  time ./Appli_Premiers_Para unSeulPremier.txt 
+ 1057  gcc main.c -o Appli_Premiers_Worker -lm -lpthread
+ 1058  time ./Appli_Premiers nombresPetitGain.txt 
+ 1059  time ./Appli_Premiers_Worker nombresPetitGain.txt 
+ 1060  gcc main.c -o Appli_Premiers_Worker -lm -lpthread
+ 1061  time ./Appli_Premiers_Worker nombresPetitGain.txt 
+ 1062  gcc main.c -o Appli_Premiers_Worker -lm -lpthread
+ 1063  time ./Appli_Premiers_Worker nombresPetitGain.txt 
+ 1064  gcc main.c -o Appli_Premiers_Worker -lm -lpthread
+ 1065  time ./Appli_Premiers_Worker nombresPetitGain.txt 
+ 1066  gcc main.c -o Appli_Premiers_Worker -lm -lpthread
+ 1067  time ./Appli_Premiers_Worker nombresPetitGain.txt 
+ 1068  gcc main.c -o Appli_Premiers_Worker -lm -lpthread
+ 1069  time ./Appli_Premiers_Worker nombresPetitGain.txt 
+ 1070  ./Appli_Premiers_Worker nombresPetitGain.txt 
+ 1071  gdb ./Appli_Premiers_Worker 
+ 1072  ls
+ 1073  make
+ 1074  gcc main.c -o Appli_Premiers_Worker -lm -lpthread
+ 1075  ./Appli_Premiers_Worker nombresPetitGain.txt 
+ 1076  gcc -g main.c -o Appli_Premiers_Worker -lm -lpthread
+ 1077  gdb ./Appli_Premiers_Worker 
+ 1078  gcc -g main.c -o Appli_Premiers_Worker -lm -lpthread
+ 1079  ./Appli_Premiers_Worker nombresPetitGain.txt 
+ 1080  time ./Appli_Premiers_Worker nombresPetitGain.txt 
+ 1081  time ./Appli_Premiers_Para nombresPetitGain.txt 
+ 1082  gcc main.c -o Appli_Premiers_Worker -lm -lpthread
+ 1083  time ./Appli_Premiers_Worker nombresPetitGain.txt 
+ 1084  time ./Appli_Premiers_Worker nombresGrandGain.txt 
+ 1085  time ./Appli_Premiers_Para nombresGrandGain.txt 
+ 1086  time ./Appli_Premiers_Worker unSeulPremier.txt 
+ 1087  time ./Appli_Premiers_Worker nombresGrandGain.txt 
+ 1088  time ./Appli_Premiers nombresGrandGain.txt 
+ 1089  history
+ 1090  history > history_command.txt
