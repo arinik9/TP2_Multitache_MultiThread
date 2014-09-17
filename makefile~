@@ -1,3 +1,0 @@
-	gcc main.c -o Appli_Premiers -lm
-	gcc generator.c -o Generer_Nombres
-
